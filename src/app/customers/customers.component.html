@@ -1,0 +1,15 @@
+<app-header></app-header>
+<div class='r-padding'>
+  <div class='heading'>
+      Customers
+  </div>
+  <div class='card'>
+    <div class='row p-b-10' *ngFor="let customer of customers">
+      <div class='sub-header float-left textColor' (click)='navigateToRetirement()'>
+        <a>{{customer}}</a>
+      </div>
+    </div>
+    
+  </div>
+  
+</div>

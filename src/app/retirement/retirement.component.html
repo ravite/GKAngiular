@@ -1,0 +1,97 @@
+<!-- <app-header></app-header>
+<div class='r-padding'>
+  <div  *ngIf = " !isAdvisor" class='heading'>
+    My Retirement
+  </div>
+
+  <div  *ngIf = "isAdvisor" class='heading'>
+    Customer
+  </div>
+  
+  <div class='card'>
+    <div class='sub-heading row'>
+      <div class='sub-header float-left'>
+        Manage
+        <span class='float-right'>
+          <div class='button'>Enquire history</div>
+        </span>
+      </div>
+    </div>
+    <div class='row p-t-30'>
+      <div class='col-md-6 col-sm-12 col-xs-12 p-b-15 p-t-15 p-l-10'>
+        <label>Creation date :&nbsp;&nbsp;</label> <span class='text'>{{retirementDetails.creationDate
+          | date : 'M/d/yyyy'}}</span>
+      </div>
+      <div class='col-md-6 col-sm-12 col-xs-12  p-t-15 p-b-15 p-l-10'>
+        <div class='row'>
+          <div class='col-md-8'>
+            <label>Investment amount :&nbsp;&nbsp;</label><span class='superscript'>TWD&nbsp;</span><span class='text'>{{retirementDetails.investmentAmount
+              | number}}</span><sub class='superscript'>&nbsp;(per month)</sub></div>
+          <div class='col-md-4 text-right'>
+            <div class='button'>Adjust amount</div>
+          </div>
+        </div>
+      </div>
+      <div class='col-md-6 col-sm-12 col-xs-12 p-b-15 p-l-10'>
+        <div class='row'>
+          <div class='col-md-8'> <label>Change account number :&nbsp;&nbsp;</label> <span class='text'>{{retirementDetails.accountNumber}}</span></div>
+          <div class='col-md-4 text-center'>
+            <div class='text ' *ngIf="!isAdvisor">
+              <fa class='pointer' name='pencil' (click)="openModal(retirementDetails, 'accountNumber', 'Change account number')"></fa>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='col-md-6 col-sm-12 col-xs-12  p-b-15 p-l-10'>
+        <label>Accumulated investment amount :&nbsp;&nbsp;</label><span class='superscript'>TWD&nbsp;</span> <span class='text'>{{retirementDetails.accumulatedInvestmentAmount
+          | number}}</span>
+      </div>
+      <div class='col-md-6 col-sm-12 col-xs-12  p-b-15 p-l-10'>
+        <div class='row'>
+          <div class='col-md-8'> <label>Charge date :&nbsp;&nbsp;</label> <span class='text'>{{retirementDetails.chargeDate
+              }}</span><sub class='superscript'>&nbsp;(Next payment date:)</sub></div>
+          <div class='col-md-4 text-center'>
+            <div class='text' *ngIf="!isAdvisor">
+              <fa name='pencil' class='pointer'></fa>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='col-md-6 col-sm-12 col-xs-12 p-b-15 p-l-10'>
+        <div class='row'>
+          <div class='col-md-8'>
+            <label>Current market value:&nbsp;&nbsp;</label><span class='superscript'>TWD&nbsp;</span><span class='text'>{{retirementDetails.currentMarketValue
+              | number}}</span></div>
+          <div class='col-md-4 text-right'>
+            <div class='button'>Redemption</div>
+          </div>
+        </div>
+      </div>
+      <div class='col-md-6 col-sm-12 col-xs-12 p-b-15 p-l-10'>
+        <div class='row'>
+          <div class='col-md-7'><label>Status :&nbsp;&nbsp;</label> <span class='text'>Monthly Charge</span></div>
+          <div class='col-md-5'>
+            <div class='button'>Suspension of investment</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='row text-center'>
+    <div class='col-md-12 p-t-40'>
+      <span class="button-success button-padding">Return</span>
+    </div>
+  </div>
+</div>
+ -->
+<app-header></app-header>
+<div class='r-padding'>
+  <div  class='heading'>
+    Welcome to Green Koncepts
+  </div>
+
+<div>
+  <div  *ngFor="let l of list" style="margin-top: 30px !important; display: inline-block; margin-right: 60px;margin-left: 60px" (click)="openModal(retirementDetails, 'accountNumber', 'Change account number')"> 
+<div id="rcorners2"><div style="text-align: center !important;
+    margin-top: 40px !important; "><h4>{{l}}</h4><div></div></div>
+</div>

@@ -1,0 +1,20 @@
+.header {
+	background-color: #292a3c;
+	height: 70px;
+	top: 0px;
+}
+
+.settings {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 70px;
+	padding-right: 40px;
+	a {
+		position: static;
+		height: 100%;
+		text-align: center;
+		display: inline-flex;
+		align-items: center;
+	}
+}

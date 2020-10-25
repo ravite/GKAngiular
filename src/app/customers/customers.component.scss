@@ -1,0 +1,43 @@
+.heading {
+    font-size: 30px;
+    padding-bottom: 60px;
+    color :#404040;
+}
+.r-padding {
+    padding: 60px 40px 40px 40px
+}
+.card {
+    background-color: #fff;
+    border: 2px solid #ececec;
+    border-radius: 2px;
+    padding: 40px;
+}
+
+.sub-heading{
+    display: grid;
+    .sub-header {
+       font-size: 20px;
+       color :#404040;
+    }
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ececec;
+    
+}
+.textColor{
+    text-decoration: underline;
+    color:blue;
+    cursor:pointer;
+}
+
+
+.p-t-30 {
+    padding-top: 30px;
+}
+.p-b-10 {
+    padding-bottom: 30px;
+}
+.p-t-40 {
+    padding-top: 40px;
+}

@@ -1,0 +1,23 @@
+<div id="container">
+  <form [formGroup]="user"  class="formWidth" id="loginForm">
+    <div class="imgcontainer">
+      <img src="https://magickmedia.com/wp-content/uploads/2015/09/mysteryperson.png"  alt="Avatar" class="avatar">
+    </div>
+  
+    <div class="container">
+      <label for="uname"><b>User name</b></label>
+      <input type="text" formControlName="userName" placeholder="Enter Username" name="uname" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" formControlName="password" placeholder="Enter Password" name="psw" required>
+          <div *ngIf="displayError" class="error">Invalid credintials</div>
+      <button type="submit" (click)='submit()'>Login</button>
+      
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">      
+      <div class="psw">Forgot <a>password?</a></div>
+    </div>
+  </form>
+  
+</div>

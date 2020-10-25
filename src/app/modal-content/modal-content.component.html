@@ -1,0 +1,30 @@
+<div class="modal-header">
+  <h4 class="modal-title sub-header pull-left">Add customer Details </h4>
+  <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <div class="container">
+  <div>
+      <label for="uname"><b>Customer Name</b></label>
+      <input style="margin-left: 74px" type="text"  placeholder="Enter Customer Name" name="uname" >
+  </div>
+  <div>
+      <label for="uname"><b>Age</b></label>
+      <input  style="margin-left: 164px" type="text"  placeholder="Enter Age" name="uname" >
+  </div><div>
+      <label for="uname"><b>Address</b></label>
+      <input style="margin-left: 132px" type="text"  placeholder="Enter Address" name="uname" >
+  </div>
+ 
+      
+    </div>
+
+  <div class='p-t-30'>
+    <div class='text-center'>
+      <span class="button-cancel m-r-10" (click)="bsModalRef.hide()">Cancel</span>
+      <span class="button-success m-r-10" (click)="save(details)">Save</span>
+    </div>
+  </div>
+</div>
