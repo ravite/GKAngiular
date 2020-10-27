@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, FormBuilder } from '@angular/forms';
 import { HttpService } from '../http.service';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
-import '../retirement/retirement.component'
+import '../home/home.component'
 import accounts from '../../assets/accounts.json';
 
 @Component({

@@ -1,0 +1,7 @@
+<app-header></app-header>
+<a class='p-r-5 pointer' (click) = 'back()'><Strong><h3>Back</h3></Strong></a>
+<h3 style="text-align: center;
+    margin-top: 30px;margin-bottom: 50px;">Hierarchy </h3>
+
+<div *ngIf="fields.dataSource"><ejs-treeview  [fields]="fields"></ejs-treeview></div>
+

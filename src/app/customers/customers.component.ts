@@ -14,7 +14,7 @@ customers:any = [];
     this.customers =["Customer1","Customer2","Customer3","Customer4"];
   }
 
-  navigateToRetirement(){
-    this.router.navigate(['/retirement']);
+  navigateToHome(){
+    this.router.navigate(['/home']);
   }
 }

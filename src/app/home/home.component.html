@@ -1,0 +1,12 @@
+
+<app-header></app-header>
+<div class='r-padding'>
+  <div  class='heading'>
+    Welcome to Green Koncepts
+  </div>
+
+<div>
+  <div  *ngFor="let l of list" style="margin-top: 30px !important; display: inline-block; margin-right: 60px;margin-left: 60px" (click)="openModal(l, 'accountNumber', 'Change account number')"> 
+<div id="rcorners2" style="cursor: pointer;"><div style="text-align: center !important;
+    margin-top: 40px !important; "><h4>{{l}}</h4><div></div></div>
+</div>

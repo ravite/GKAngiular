@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RetirementComponent } from './retirement.component';
+import { HierarchyComponent } from './hierarchy.component';
 
-describe('RetirementComponent', () => {
-  let component: RetirementComponent;
-  let fixture: ComponentFixture<RetirementComponent>;
+describe('HierarchyComponent', () => {
+  let component: HierarchyComponent;
+  let fixture: ComponentFixture<HierarchyComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RetirementComponent ]
+      declarations: [ HierarchyComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RetirementComponent);
+    fixture = TestBed.createComponent(HierarchyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
